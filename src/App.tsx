@@ -24,7 +24,7 @@ const App: React.FC = () => {
       {/* Render DataTable component for average yield and area under cultivation */}
       <DataTable
         title="Average Yield and Area under Cultivation"
-        columns={['Crop', 'Average Yield (Kg/Ha)', 'Average Cultivation Area (Ha)']}
+        columns={['Crop', 'Average Yield of the Crop between 1950-2020', 'Average Cultivation Area of the Crop between 1950-2020']}
         data={averageYieldAndAreaData}
       />
     </div>
