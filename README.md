@@ -1,4 +1,4 @@
-# Indian Agriculture Data Analytics ~ ![Link](https://manufac.onrender.com/)
+# Indian Agriculture Data Analytics ~ [Link](https://manufac.onrender.com/)
 
 This project performs analytics on an Indian Agriculture dataset provided by the National Data and Analytics Platform, NITI Aayog. The analysis results are displayed in tabular format using React and Mantine.
 
