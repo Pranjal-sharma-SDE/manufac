@@ -98,10 +98,10 @@ The `DataTable` component is used to render the results in tabular format. Two i
 ## Screenshots
 
 ### Max/Min Crop Production by Year
-![Max/Min Crop Production by Year](Snaps\Table1.png)
+![Max/Min Crop Production by Year](https://github.com/Pranjal-sharma-SDE/manufac/blob/master/Snaps/Table1.png)
 
 ### Average Yield and Area Under Cultivation
-![Average Yield and Area Under Cultivation](Snaps\Table2.png)
+![Average Yield and Area Under Cultivation](https://github.com/Pranjal-sharma-SDE/manufac/blob/master/Snaps/Table2.png)
 
 ## Evaluation Criteria
 
