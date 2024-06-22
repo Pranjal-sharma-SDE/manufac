@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DataTable from './components/DataTable'; // Import DataTable component
+import jsonData from './data/Agro.json'; // Import the JSON data
+import { transformData, getMaxMinProductionByYear, getAverageYieldAndArea } from './utils/dataAnalysis'; // Import utility functions for data transformation and analysis
 
-function App() {
+const App: React.FC = () => {
+  // Transform the raw JSON data into a more usable format
+  const data = transformData(jsonData);
+
+  // Get the max and min crop production data by year
+  const maxMinProductionData = getMaxMinProductionByYear(data);
+
+  // Get the average yield and area under cultivation data
+  const averageYieldAndAreaData = getAverageYieldAndArea(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Render DataTable component for max/min crop production by year */}
+      <DataTable
+        title="Max/Min Crop Production by Year"
+        columns={['Year', 'Crop with Max Production', 'Crop with Min Production']}
+        data={maxMinProductionData}
+      />
+      {/* Render DataTable component for average yield and area under cultivation */}
+      <DataTable
+        title="Average Yield and Area under Cultivation"
+        columns={['Crop', 'Average Yield (Kg/Ha)', 'Average Cultivation Area (Ha)']}
+        data={averageYieldAndAreaData}
+      />
     </div>
   );
-}
+};
 
 export default App;
